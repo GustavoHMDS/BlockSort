@@ -46,7 +46,7 @@ void salvaVetorEmArquivo(const std::vector<int>& vetor, const std::string& nomeA
 
     arquivo.close(); // Fecha o arquivo
 }
-
+/*
 int main(int argc, char* argv[]) {
     std::cout << "Verificando argumentos... " << std::endl;
     if (argc != 4) {
@@ -70,3 +70,4 @@ int main(int argc, char* argv[]) {
 
     return 0;
 }
+*/

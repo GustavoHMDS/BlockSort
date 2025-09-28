@@ -1,0 +1,54 @@
+Arquivo de entrada: Testes/vetor50A
+Algoritmo: MergeSort
+Tempo (s): 0
+Memória estimada (bytes): 404
+-------------------------------
+Algoritmo: BlockSort
+Tempo (s): 0
+Memória estimada (bytes): 496
+-------------------------------
+Arquivo de entrada: Testes/vetor100A
+Algoritmo: MergeSort
+Tempo (s): 0
+Memória estimada (bytes): 804
+-------------------------------
+Algoritmo: BlockSort
+Tempo (s): 0
+Memória estimada (bytes): 920
+-------------------------------
+Arquivo de entrada: Testes/vetor250A
+Algoritmo: MergeSort
+Tempo (s): 0.00101
+Memória estimada (bytes): 2000
+-------------------------------
+Algoritmo: BlockSort
+Tempo (s): 0
+Memória estimada (bytes): 2204
+-------------------------------
+Arquivo de entrada: Testes/vetor2000A
+Algoritmo: MergeSort
+Tempo (s): 0.001004
+Memória estimada (bytes): 16000
+-------------------------------
+Algoritmo: BlockSort
+Tempo (s): 0.00201
+Memória estimada (bytes): 16552
+-------------------------------
+Arquivo de entrada: Testes/vetor2000C
+Algoritmo: MergeSort
+Tempo (s): 0.001003
+Memória estimada (bytes): 16000
+-------------------------------
+Algoritmo: BlockSort
+Tempo (s): 0.001002
+Memória estimada (bytes): 16552
+-------------------------------
+Arquivo de entrada: Testes/vetor100000A
+Algoritmo: MergeSort
+Tempo (s): 0.050466
+Memória estimada (bytes): 800020
+-------------------------------
+Algoritmo: BlockSort
+Tempo (s): 0.507191
+Memória estimada (bytes): 803804
+-------------------------------

@@ -3,8 +3,11 @@
 
 #include <vector>
 #include <climits>
-#include "../utils/ordenacaoGenerica.hpp"
+#include <chrono>
+#include "../Utils/ordenacaoGenerica.hpp"
+#include "../Utils/relatorPerformance.hpp"
 
-std::vector<int> blockSort(int tamanhoBlocos, std::vector<int>& vetorInicial);
+void blockSort(int tamanhoBlocos, std::vector<int>& vetor);
+RelatorioPerformance blockSortBenchMark(int tamanhoBlocos, std::vector<int>& vetorInicial);
 
 #endif
