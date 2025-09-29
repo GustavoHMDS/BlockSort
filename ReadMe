@@ -1,0 +1,18 @@
+Existem dois executaveis no código atual:
+    geraVetor:  Gera um arquivo para testes contendo um vetor de acordo com as especificações do usuário;
+
+                Parametros: ./geraVetor tamanho organização caminhoSaida
+                organização:
+                    -1: Em ordem crescente;
+                     0: Aleatório;
+                     1: Em ordem decrescente;
+    
+    comparaOrdenadores: Organiza um vetor de entrada com o BlockSort e com o mergeSort e calcula o tempo de execução,
+                        e então estima o máximo de memória gasto pelo algoritmo. No caso do mergeSort, não será 
+                        calculado o gasto total de memória, mas sim a maior quantidade de memoria utilizada durante a
+                        execução. Essas informações são salvas no arquivo relatorios.txt na pasta de dados;
+
+                        Parametros: ./comparaOrdenadores nomeEntrada;
+
+Além disso todos os arquivos utilizados para os testes feitos para o artigo estão na pasta dados/Testes, e os resultados
+em relatorios.txt;
