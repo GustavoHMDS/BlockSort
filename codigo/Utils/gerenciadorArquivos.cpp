@@ -24,7 +24,7 @@ std::vector<int> lerVetorDeArquivo(const std::string& caminhoArquivo) {
 }
 
 void imprimeResultados(RelatorioPerformance relatorioMerge, RelatorioPerformance relatorioBlock, std::string nomeEntrada) {
-    std::ofstream relatorio("relatorios.txt", std::ios::app);
+    std::ofstream relatorio("../../dados/relatorios.txt", std::ios::app);
     if (!relatorio.is_open()) {
         std::cerr << "Erro ao abrir o arquivo de relatorios." << std::endl;
         exit(1);
