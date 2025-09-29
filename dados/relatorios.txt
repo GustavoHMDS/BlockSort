@@ -52,3 +52,21 @@ Algoritmo: BlockSort
 Tempo (s): 0.507191
 Memória estimada (bytes): 803804
 -------------------------------
+Arquivo de entrada: vetor500A
+Algoritmo: MergeSort
+Tempo (s): 0
+Memória estimada (bytes): 4000
+-------------------------------
+Algoritmo: BlockSort
+Tempo (s): 0
+Memória estimada (bytes): 4276
+-------------------------------
+Arquivo de entrada: vetor1000A
+Algoritmo: MergeSort
+Tempo (s): 0.001004
+Memória estimada (bytes): 4000
+-------------------------------
+Algoritmo: BlockSort
+Tempo (s): 0
+Memória estimada (bytes): 4276
+-------------------------------
