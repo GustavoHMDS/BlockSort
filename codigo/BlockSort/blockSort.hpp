@@ -4,10 +4,16 @@
 #include <vector>
 #include <climits>
 #include <chrono>
-#include "../Utils/ordenacaoGenerica.hpp"
-#include "../Utils/relatorPerformance.hpp"
+#include <cmath>
+#include "codigo/InsertionSort/insertionSort.hpp"
+#include "codigo/Utils/relatorPerformance.hpp"
 
-void blockSort(int tamanhoBlocos, std::vector<int>& vetor);
-RelatorioPerformance blockSortBenchMark(int tamanhoBlocos, std::vector<int>& vetorInicial);
+typedef struct {
+    int inicio;
+    int fim;
+} Bloco;
+
+void blockSort(std::vector<int>& vetor);
+RelatorioPerformance blockSortBenchMark(std::vector<int>& vetorInicial);
 
 #endif

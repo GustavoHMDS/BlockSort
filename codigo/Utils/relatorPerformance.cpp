@@ -1,8 +1,18 @@
 #include "relatorPerformance.hpp"
 
-void imprimeRelatorio(const RelatorioPerformance& relatorio, std::ofstream& saida) {
-    saida << "Algoritmo: " << relatorio.nomeAlgoritmo << "\n";
-    saida << "Tempo (s): " << relatorio.tempoExecucaoEmSegundos << "\n";
-    saida << "Memória estimada (bytes): " << relatorio.memoriaEstimadaBytes << "\n";
-    saida << "-------------------------------\n";
+std::string imprimeRelatorio(const RelatorioPerformance& relatorio) {
+    std::ostringstream texto;
+    if(relatorio.sucesso){
+        texto << "Algoritmo: " << relatorio.nomeAlgoritmo << "\n";
+        texto << "Tempo (s): " << relatorio.tempoExecucaoEmSegundos << "\n";
+        texto << "Memória estimada (bytes): " << relatorio.memoriaEstimadaBytes << "\n";
+        texto << "-------------------------------\n";
+    }
+    else {
+        texto << "Algoritmo: " << relatorio.nomeAlgoritmo << "\n";
+        texto << "Tempo (s): Não completou \n";
+        texto << "Memória estimada (bytes): Não completou \n";
+        texto << "-------------------------------\n";
+    }
+    return texto.str();
 };

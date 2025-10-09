@@ -7,7 +7,8 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include "ordenacaoGenerica.hpp"
+#include "codigo/InsertionSort/insertionSort.hpp"
+#include "gerenciadorArquivos.hpp"
 
 #define CRESCENTE -1
 #define DESORDENADO 0

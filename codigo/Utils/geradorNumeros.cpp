@@ -4,9 +4,7 @@ std::vector<int> geraVetorNumeros(int tamanho, int ordenacao) {
     std::vector<int> numeros;
 
     // Preenche o vetor com números de 1 até tamanho
-    for (int i = 1; i <= tamanho; ++i) {
-        numeros.push_back(i);
-    }
+
 
     std::random_device seed;
     std::mt19937 randomizer(seed());
@@ -14,12 +12,20 @@ std::vector<int> geraVetorNumeros(int tamanho, int ordenacao) {
     // Embaralha o vetor usando um gerador aleatório
     switch(ordenacao) {
         case CRESCENTE:
-            insertionSortCrescente(numeros);
+            for (int i = 1; i <= tamanho; i++) {
+                numeros.push_back(i);
+            }
             break;
         case DESORDENADO:
+            for (int i = 1; i <= tamanho; i++) {
+                numeros.push_back(i);
+            }
             std::shuffle(numeros.begin(), numeros.end(), randomizer);
             break;
         case DECRESCENTE:
+            for (int i = tamanho; i >= 1; i--) {
+                numeros.push_back(i);
+            }
             insertionSortDecrescente(numeros);
             break;
         default:
@@ -30,23 +36,6 @@ std::vector<int> geraVetorNumeros(int tamanho, int ordenacao) {
     return numeros;
 }
 
-void salvaVetorEmArquivo(const std::vector<int>& vetor, const std::string& nomeArquivo) {
-    std::ofstream arquivo(nomeArquivo); // Abre o arquivo para escrita
-
-    if (!arquivo) {
-        std::cerr << "Erro ao abrir o arquivo: " << nomeArquivo << std::endl;
-        return;
-    }
-
-    for (int numero : vetor) {
-        arquivo << numero << " ";
-    }
-
-    arquivo << std::endl; // Nova linha no final (opcional)
-
-    arquivo.close(); // Fecha o arquivo
-}
-/*
 int main(int argc, char* argv[]) {
     std::cout << "Verificando argumentos... " << std::endl;
     if (argc != 4) {
@@ -70,4 +59,3 @@ int main(int argc, char* argv[]) {
 
     return 0;
 }
-*/

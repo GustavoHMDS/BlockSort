@@ -2,6 +2,7 @@
 #define RELATOR_PERFORMANCE_HPP
 
 #include <string>
+#include <sstream>
 #include <iostream>
 #include <fstream>
 
@@ -9,8 +10,9 @@ struct RelatorioPerformance {
     double tempoExecucaoEmSegundos;
     int memoriaEstimadaBytes;
     std::string nomeAlgoritmo;
+    bool sucesso;
 };
 
-void imprimeRelatorio(const RelatorioPerformance& relatorio, std::ofstream& saida);
+std::string imprimeRelatorio(const RelatorioPerformance& relatorio);
 
 #endif
