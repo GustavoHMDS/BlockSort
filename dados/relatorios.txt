@@ -238,3 +238,123 @@ Algoritmo: BlockSort
 Tempo (s): 5.52015
 Memória estimada (bytes): 8008004
 -------------------------------
+Arquivo de entrada: C250k
+Algoritmo: InsertionSort
+Tempo (s): 0.0028987
+Memória estimada (bytes): 1000000
+-------------------------------
+Arquivo de entrada: D250k
+Algoritmo: InsertionSort
+Tempo (s): 252.241
+Memória estimada (bytes): 1000000
+-------------------------------
+Arquivo de entrada: A250k
+Algoritmo: InsertionSort
+Tempo (s): 126.841
+Memória estimada (bytes): 1000000
+-------------------------------
+Arquivo de entrada: C250k
+Algoritmo: selectionSort
+Tempo (s): 250.847
+Memória estimada (bytes): 1000000
+-------------------------------
+Arquivo de entrada: D250k
+Algoritmo: selectionSort
+Tempo (s): 240.642
+Memória estimada (bytes): 1000000
+-------------------------------
+Arquivo de entrada: A250k
+Algoritmo: selectionSort
+Tempo (s): 238.273
+Memória estimada (bytes): 1000000
+-------------------------------
+Arquivo de entrada: C250k
+Algoritmo: bubbleSort
+Tempo (s): 186.944
+Memória estimada (bytes): 1000000
+-------------------------------
+Arquivo de entrada: D250k
+Algoritmo: bubbleSort
+Tempo (s): 521.985
+Memória estimada (bytes): 1000000
+-------------------------------
+Arquivo de entrada: A250k
+Algoritmo: bubbleSort
+Tempo (s): 410.655
+Memória estimada (bytes): 1000000
+-------------------------------
+Arquivo de entrada: C250k
+Algoritmo: BlockSort
+Tempo (s): 0.530022
+Memória estimada (bytes): 2004004
+-------------------------------
+Arquivo de entrada: D250k
+Algoritmo: BlockSort
+Tempo (s): 1.07153
+Memória estimada (bytes): 2004004
+-------------------------------
+Arquivo de entrada: A250k
+Algoritmo: BlockSort
+Tempo (s): 1.60201
+Memória estimada (bytes): 2004004
+-------------------------------
+Arquivo de entrada: C500k
+Algoritmo: InsertionSort
+Tempo (s): 0.0060691
+Memória estimada (bytes): 2000000
+-------------------------------
+Arquivo de entrada: D500k
+Algoritmo: InsertionSort
+Tempo (s): 1008.5
+Memória estimada (bytes): 2000000
+-------------------------------
+Arquivo de entrada: A500k
+Algoritmo: InsertionSort
+Tempo (s): 504.074
+Memória estimada (bytes): 2000000
+-------------------------------
+Arquivo de entrada: C500k
+Algoritmo: selectionSort
+Tempo (s): 999.516
+Memória estimada (bytes): 2000000
+-------------------------------
+Arquivo de entrada: D500k
+Algoritmo: selectionSort
+Tempo (s): 966.282
+Memória estimada (bytes): 2000000
+-------------------------------
+Arquivo de entrada: A500k
+Algoritmo: selectionSort
+Tempo (s): 1006.42
+Memória estimada (bytes): 2000000
+-------------------------------
+Arquivo de entrada: C500k
+Algoritmo: bubbleSort
+Tempo (s): 737.845
+Memória estimada (bytes): 2000000
+-------------------------------
+Arquivo de entrada: D500k
+Algoritmo: bubbleSort
+Tempo (s): 2081.4
+Memória estimada (bytes): 2000000
+-------------------------------
+Arquivo de entrada: A500k
+Algoritmo: bubbleSort
+Tempo (s): 1635.92
+Memória estimada (bytes): 2000000
+-------------------------------
+Arquivo de entrada: C500k
+Algoritmo: BlockSort
+Tempo (s): 1.79334
+Memória estimada (bytes): 4005664
+-------------------------------
+Arquivo de entrada: D500k
+Algoritmo: BlockSort
+Tempo (s): 3.06843
+Memória estimada (bytes): 4005664
+-------------------------------
+Arquivo de entrada: A500k
+Algoritmo: BlockSort
+Tempo (s): 4.01615
+Memória estimada (bytes): 4005664
+-------------------------------

@@ -13,6 +13,7 @@
 #include <functional>
 
 #define DEZ_MINUTOS 600
+#define UMA_HORA 3600
 
 template<typename Func>
 RelatorioPerformance runComTimeout(Func algoritmoOrdenacao, std::chrono::seconds timeout, const std::string& nomeAlgoritmo, std::vector<int>& vetor) {
@@ -31,17 +32,26 @@ RelatorioPerformance runComTimeout(Func algoritmoOrdenacao, std::chrono::seconds
 
 
 int main(int argc, char* argv[]) {
-    if (argc != 4) {
-        std::cerr << "Uso: " << argv[0] << "<nome_algoritmo> <arquivo_entrada> <imprimir_vetor(Y/n)>" << std::endl;
+    if (argc != 5) {
+        std::cerr << "Uso: " << argv[0] << "<nome_algoritmo> <arquivo_entrada> <imprimir_vetor(Y/n)> <tempo max em seg>" << std::endl;
         return 1;
     }
 
     std::string nomeAlgoritmo = argv[1];
     std::string nomeArquivo = argv[2];
     std::string escolhaImpressao = argv[3];
+    std::string tempoMaxString = argv[4];
     
     bool imprimeVetores = (escolhaImpressao == "y" || escolhaImpressao == "Y");
     std::vector<int> vetor = lerVetorDeArquivo(nomeArquivo);
+
+    int capTempo;
+    try {
+        capTempo = std::stoi(tempoMaxString);
+    } 
+    catch (std::invalid_argument &e) {
+        std::cout << "O tempo máximo não é um número!\n";
+    }
 
     if (vetor.empty()) {
         std::cerr << "Erro: vetor lido está vazio ou houve falha na leitura." << std::endl;
@@ -50,7 +60,7 @@ int main(int argc, char* argv[]) {
     
     RelatorioPerformance relatorio;
 
-    constexpr std::chrono::seconds tempoMax(DEZ_MINUTOS);
+    std::chrono::seconds tempoMax(capTempo);
     std::function<RelatorioPerformance(std::vector<int>&)> ordenador;
     
     if(nomeAlgoritmo == "insertionsort") {
