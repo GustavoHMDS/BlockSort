@@ -358,3 +358,8 @@ Algoritmo: BlockSort
 Tempo (s): 4.01615
 Memória estimada (bytes): 4005664
 -------------------------------
+Arquivo de entrada: dados\Testes\C50k
+Algoritmo: InsertionSort
+Tempo (s): 0.0005195
+Memória estimada (bytes): 200000
+-------------------------------

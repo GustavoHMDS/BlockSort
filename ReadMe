@@ -19,13 +19,15 @@ Existem dois executaveis no código atual:
                                     codigo/Utils/relatorPerformance.cpp codigo/BubbleSort/bubbleSort.cpp codigo/SelectionSort/selectionSort.cpp 
                                     codigo/BlockSort/blockSort.cpp -o comparaOrdenadores
                         Parametros: ./comparaOrdenadores <nome da entrada> <imprimir Vetores(Y/n)> <tempo max de execucao em segundos>
-                        
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Além disso, usamos threads para poder colocar um timeout caso algum dos algoritmos demorasse muito para finalizar, porem como o c++ não tem a opção de matar uma thread, foi
 necessario rodar cada arquivo e algoritmo separadamente, a fim de sair do programa se ele demorar demais. Por isso foi utilizado o seguinte bat para os testes:
     auto.bat:   Se estiver no windows pode ser usado para rodar todos os testes que fizemos, atualmente ele configurado interromper em (3600), mas os primeiros testes foram 
                 feitos com 10min (600), o que pode ser usado para comparar com os primeiros resultados.
+
+                Execução: ./codigo/auto.bat
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
